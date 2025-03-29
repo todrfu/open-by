@@ -1,0 +1,58 @@
+{
+  "main": "index.html",
+  "preload": "preload/services.js",
+  "logo": "logo.png",
+  "development": {
+    "main": "http://localhost:5173"
+  },
+  "features": [
+    {
+      "code": "open-by",
+      "explain": "快速使用指定应用中打开本地文件或文件夹",
+      "cmds": [
+        "code",
+        "vscode",
+        "cursor",
+        "webstorm",
+        "pycharm",
+        "goland",
+        "appcode",
+        {
+          "type": "regex",
+          "match": "/vscode\\s+.*/i",
+          "label": "用VSCode打开文件"
+        },
+        {
+          "type": "regex",
+          "match": "/code\\s+.*/i",
+          "label": "用VSCode打开文件"
+        },
+        {
+          "type": "regex",
+          "match": "/cursor\\s+.*/i",
+          "label": "用Cursor打开文件"
+        },
+        {
+          "type": "regex",
+          "match": "/webstorm\\s+.*/i",
+          "label": "用WebStorm打开文件"
+        },
+        {
+          "type": "regex",
+          "match": "/pycharm\\s+.*/i",
+          "label": "用PyCharm打开文件"
+        },
+        {
+          "type": "regex",
+          "match": "/goland\\s+.*/i",
+          "label": "用GoLand打开文件"
+        },
+        {
+          "type": "regex",
+          "match": "/appcode\\s+.*/i",
+          "label": "用AppCode打开文件"
+        }
+      ]
+    }
+  ]
+}
